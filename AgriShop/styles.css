@@ -1,0 +1,192 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d9a6a6;
+    text-align: center;
+}
+
+.container {
+    width: 300px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    display: grid;
+    place-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+input {
+    width: 90%; /* Para hindi dumikit sa gilid */
+    padding: 10px; 
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.sidebar {
+    width: 200px;
+    background: #f0f0f0;
+    height: 100vh;
+    position: fixed;
+    padding-top: 20px;
+}
+
+.sidebar a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: black;
+}
+
+.sidebar a.active, .sidebar a:hover {
+    background: #00a2ff;
+    color: white;
+}
+
+
+
+.navbar {
+    background: #ddd;
+    padding: 15px;
+    text-align: right;
+}
+
+.college-logo {
+    width: 300px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+   transform: translateX(-50%);
+    
+  }
+
+
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+/* Sidebar */
+.sidebar {
+    width: 200px;
+    background: #ddd;
+    height: 100vh;
+    padding: 20px;
+}
+
+.navbar {
+    background: #ccc;
+    padding: 15px;
+    text-align: right;
+}
+
+
+
+.username {
+    font-weight: bold;
+    color: white;
+}
+
+.time {
+    font-size: 12px;
+    color: rgb(255, 255, 255);
+}
+
+/* Post Image */
+.post-image {
+    width: 50%;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/* Actions */
+.actions {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.actions span {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+
+
+/*qweqwe*/
+
+.post-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Para hatiin sa kaliwa at kanan */
+    font-size: 20px;
+    color: #555;
+}
+
+
+.location {
+    font-size: 12px;
+    color: #ffffff;
+    margin-left: auto; /* Para itulak sa kanan */
+}
+
+.posts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; /* Para di sumobra */
+    max-width: 1000px; /* Para di lumapad masyado */
+    margin: 0 auto; /* Center horizontally */
+}
+
+.post {
+    width: 200%; /* Gawing mas malapad */
+    max-width: 500px; /* Para hindi sobrang laki */
+    background: #575454;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+    min-height: 300px; /* Minimum height */
+}
+.main-content {
+    margin-left: 200px; /* Adjust kung may sidebar */
+    display: flex ;
+    flex-direction: column ;
+    align-items: center ;
+}
+.post-image {
+    width: 100%; /* Para masakop ang buong post width */
+    max-width: 500px; /* Limitahan kung gusto mo */
+    height: auto; /* Para hindi ma-distort */
+}
